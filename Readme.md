@@ -1,3 +1,6 @@
+//fresh express code provided by ronald regaldo
+//data binding code in tvshow/app_client/home/home.view.html assisted by ronald regaldo
+
 #install express
 sudo npm install -g express-generator
 
