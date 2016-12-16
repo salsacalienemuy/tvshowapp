@@ -1,5 +1,6 @@
 //fresh express code provided by ronald regaldo
 //data binding code in tvshow/app_client/home/home.view.html assisted by ronald regaldo
+//tvdb api: F165C67D6C6C067D
 
 #install express
 sudo npm install -g express-generator
