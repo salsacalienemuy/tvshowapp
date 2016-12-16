@@ -1,0 +1,43 @@
+var TvshowSchema = new mongoose.Schema({
+	Title: String,
+	Year: Number,
+	Genre: String,
+	Description: String,
+});
+
+db.Tvshow.insert(
+	[
+		{ Title: "Family Feud", 
+		  Year: 1976, 
+		  Genre: "Game Show", 
+		  Description: "Two families of five try to guess what the survey said in polls conducted" },
+		{ Title: "Breaking Bad", 
+		  Year: 2008, 
+		  Genre: "Drama", 
+		  Description: "Walter White, a struggling high school chemistry teacher, is diagnosed with advanced lung cancer. He turns to a life of crime, producing and selling methamphetamine accompanied by a former student, Jesse Pinkman, with the aim of securing his family's financial future before he dies." },
+		{ Title: "Game of Thrones", 
+		  Year: 2011, 
+		  Genre: "Fantasy", 
+		  Description: "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and the icy horrors beyond." },
+		{ Title: "Frasier", 
+		  Year: 1993, 
+		  Genre: "Comedy", 
+		  Description: "After many years spent at the Cheers bar, Frasier (Kelsey Grammer) moves back home to Seattle after his policeman father Martin Crane John Mahoney gets shot in the hip on duty. After Martin struggles with living alone after the incident, he moves in with Frasier in his luxury apartment at the Elliot Bay Towers along with his dog Eddie played by Moose and later Enzo. Hired by Frasier, Daphne Moon Jane Leeves also moves in as Martin's personal physiotherapist. Also living nearby is his younger brother Niles Crane (David Hyde Pierce), who is also a Psychiatrist." },
+		{ Title: "The Office", 
+		  Year: 2005, 
+		  Genre: "Comedy", 
+		  Description: "A fresh and funny mockumentary-style glimpse into the daily interactions of the eccentric workers at the Dunder Mifflin paper supply company. This fast-paced comedy parodies contemporary American water-cooler culture." },
+		{ Title: "Black Sails", 
+		  Year: 2014, 
+		  Genre: "Adventure", 
+		  Description: "The pirate adventure Black Sails centers on the tales of Captain Flint and his men and takes place twenty years prior to Robert Louis Stevenson’s classic Treasure Island. Flint, the most brilliant and most feared pirate captain of his day, takes on a fast-talking young addition to his crew who goes by the name John Silver. Threatened with extinction on all sides, they fight for the survival of New Providence Island, the most notorious criminal haven of its day  a debauched paradise teeming with pirates, prostitutes, thieves and fortune seekers, a place defined by both its enlightened ideals and its stunning brutality." },
+		{ Title: "Seinfeld", 
+		  Year: 1989, 
+		  Genre: "Comedy", 
+		  Description: "Jerry Seinfeld is a very successful stand-up comedian, mainly because the people around him offer an endless supply of great material. His best friend is George Costanza, a bald, whiny loser who craves the kind of success Jerry has but is never willing to do what it takes to get it. Jerry's neighbor Kramer often barges into his apartment and imposes onto his life. In the second episode Jerry's former girlfriend Elaine Benes comes back into his life, and the four of them are able to form a friendship together. The episodes were rarely very plot-heavy, focusing more on mundane conversations and situations that could be found during everyday life in New York." },
+		{ Title: "Friends", 
+		  Year: 1994, 
+		  Genre: "Comedy", 
+		  Description: "Six young people, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pressures of life." },
+	]
+)

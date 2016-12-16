@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Angular binding test</title>
+</head>
+
+<body>
+    <navbar></navbar>
+    
+    <div id="banner" class="page-header">
+        <div class="row">
+            <div class="col-lg-6"></div>
+            <h1>
+                {{ vm.pageHeader.title }}
+                <small>{{ vm.pageHeader.strapline }}</small>
+            </h1>
+        </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8">
+      <div class="row list-group">
+        <div class="col-xs-12 list-group-item" ng-repeat="x in vm.content track by $index">
+            <p>City: {{x.city}}</p>
+            <p>Date: {{x.date}}</p>
+            <p>Magnitude: {{x.magnitude}}</p>
+            <p>Description: {{x.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+</body>
+
+<style>
+    body{
+        background-image: url("http://2.bp.blogspot.com/-s3xMF9GIvcU/T0aLSO5M8UI/AAAAAAAAAUU/NI5DjpMbb5k/s1600/TV+Genre.jpg");
+    }
+</style>
+
+</html>

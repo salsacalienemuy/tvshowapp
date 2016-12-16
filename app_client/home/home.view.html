@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Angular binding test</title>
+</head>
+
+<body>
+    <navbar></navbar>
+
+    
+    <div id="banner" class="page-header">
+        <div class="row">
+            <div class="col-lg-6"></div>
+            <h1>
+                {{ vm.pageHeader.title }}
+                <small>{{ vm.pageHeader.strapline }}</small>
+            </h1>
+    </div>
+            <div>
+            <p>Content: {{vm.output}}</p>
+    </div>
+    </div>
+    <input ng-model="myInput" />
+    <h1>{{ myInput }}</h1>
+    <div class="col-xs-12 col-sm-4">
+        <p class="lead">{{ vm.sidebar.content }}</p>
+    </div>
+</body>
+
+<style>
+body {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/51rRH0hdDZL._SX940_.jpg");
+    }
+content{
+    color: #FFFFFF;
+    }
+    
+</style>
+
+</html>
